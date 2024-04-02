@@ -22,6 +22,9 @@ def mul(a,b):
 def div(a,b):
   print("The Sum is",a/b)
 
+def rem(a,b):
+  print("The Remainder is",a%b)
+
 if(op=='+'):
   add(a,b)
 elif(op=='-'):
@@ -30,5 +33,7 @@ elif(op=='*'):
   mul(a,b)
 elif(op=='/'):
   div(a,b)
+elif(op=='%'):
+  rem(a,b)
 else:
   print("Invalid input")
