@@ -19,3 +19,9 @@ while True:
     o.rem(a,b)
   else:
     print("Invalid input")
+
+  repeat=input("Do you want to calculate again(yes/no) :")
+  if (repeat.lower()=='no'):
+    break
+  else:
+    pass
