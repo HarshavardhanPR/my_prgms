@@ -88,6 +88,7 @@ def rev_number(n):
   print(rev_num)
 rev_number(n)
 
+#find the factorial of a number
 n=int(input("Enter n : "))
 fact=1
 for i in range (1,n+1):
