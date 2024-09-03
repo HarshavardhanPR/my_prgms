@@ -11,6 +11,7 @@ int findsum(int arr[],int n){
     for(auto itr=mp.begin();itr!=mp.end();itr++){
         if(itr->second%2!=0){
             sum+=(itr->first)*(itr->second);
+            cout<<itr->first<<" , "<<itr->second<<" , "<<sum<<endl;
         }
 
     }

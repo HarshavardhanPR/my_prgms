@@ -13,7 +13,7 @@ void findfreq(int arr[],int n){
 }
 int main(){
     int n;
-    int arr[]={1,2,2,4,3};
+    int arr[]={1,2,2,4,3,6,2,8,1,9};
     n=sizeof(arr)/sizeof(arr[0]);
     findfreq(arr,n);
     return 0;
