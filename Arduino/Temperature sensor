@@ -1,0 +1,19 @@
+//C++ code
+
+//Reads the temperature data and prints on serial monitor
+
+float temp;
+int tempPin=0; // assigns A0 pindata to variable 
+
+void setup(){
+  Serial.begin(9600); //initialize the serial communication with a baud rate of 9600
+}
+void loop(){
+temp=analogRead(tempPin); // reads the analog pindata
+  temp=map(((temp-20)*3.04),0,1023,-40,125); //maps the extreem values from analog values to sensor
+  Serial.print("Temperature = ");
+  Serial.print(temp);
+  Serial.print("*C");
+  Serial.println();
+  delay(1000);
+}
