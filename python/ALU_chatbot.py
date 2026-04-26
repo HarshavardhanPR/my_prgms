@@ -22,7 +22,10 @@ while True:
       elif user_input in ['*','mul','multiply','multiplication']:
         print(f'{bot_name} : {number1} * {number2} = {number1*number2}')
       elif user_input in ['/','div','divide','division']:
-        print(f'{bot_name} : {number1} / {number2} = {number1/number2}')
+      if number2 == 0:
+          print(f'{bot_name} : Cannot divide by zero')
+      else:
+          print(f'{bot_name} : {number1} / {number2} = {number1/number2}')
       else:
         print(f'{bot_name} : Invalid operation')
     except ValueError as e:
